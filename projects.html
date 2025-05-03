@@ -1,80 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Page</title>
-    <link rel="stylesheet" href="css/project.css">
+  <meta charset="UTF-8">
+  <title>SNL Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #e3f1ed;
+    }
+    header {
+      background-color: #fff3e6;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #1c1c1c;
+    }
+    nav a.active {
+      border-bottom: 4px solid #f58634;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    p.intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      color: #2c3e50;
+    }
+    .projects-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .project-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .project-card h3 {
+      color: #e74c3c;
+    }
+    .screenshot {
+      background-color: #f4a742;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+    .project-card ul {
+      padding-left: 20px;
+    }
+    .project-card a {
+      color: #006699;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Webpage Project</h1>
-        </div>
 
-        
+<header>
+  <div class="logo" style="font-size: 24px;">SNL</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="#" class="active">Projects</a>
+  </nav>
+</header>
 
-        <nav>
-            <ul>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-               
-            </ul>
-        </nav>
-        <a href="index.html" class=".back-link">Back to Home</a>
-    </header>
+<section>
+  <h2>Our Projects</h2>
+  <p class="intro">
+    Here are some of the projects we've worked on as part of our learning journey. Each one helped us apply what we've learned about HTML, CSS, and JavaScript while collaborating as a team.
+  </p>
 
-    <section id="overview">
-        <div class="container">
-            <h2>Project Overview</h2>
-            <p>This project aims to solve XYZ problem using innovative approaches and technologies.</p>
-            <img src="image/web.webp" loading="lazy" width="250" height="auto" alt="Project Image">
-        </div>
-    </section>
+  <div class="projects-container">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3>Project 1 /<br>Group Portfolio Website</h3>
+      <div class="screenshot">this website screenshot</div>
+      <p>
+        A group portfolio site created using semantic HTML, responsive CSS Grid/Flexbox, and JavaScript. It introduces the team members, showcases skills, and follows good layout and accessibility practices.
+      </p>
+      <p><strong>Technologies:</strong></p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS (Flexbox & Grid)</li>
+        <li>JavaScript (Basic DOM)</li>
+      </ul>
+      <p><strong>Links:</strong><br>
+        GitHub Repo: <a href="https://github.com/ourteam/portfolio" target="_blank">github.com/ourteam/portfolio</a><br>
+        LinkedIn: (optional)
+      </p>
+    </div>
 
-    <section id="features">
-        <div class="container">
-            <h2>Key Features</h2>
-            <ul>
-                <li>Feature 1: Detailed explanation of feature.</li>
-                <li>Feature 2: How this feature benefits the users.</li>
-                <li>Feature 3: Highlighting the uniqueness of this feature.</li>
-            </ul>
-        </div>
-    </section>
+    <!-- Project 2 -->
+    <div class="project-card">
+      <h3>Project 2 /<br>Project name</h3>
+      <div class="screenshot">screenshot</div>
+      <p>
+        What else to put? What else to put? What else to put? (Placeholder text — you can replace this with your second project description.)
+      </p>
+      <p><strong>Technologies:</strong></p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS (Flexbox & Grid)</li>
+        <li>JavaScript (Basic DOM)</li>
+      </ul>
+      <p><strong>Links:</strong><br>
+        GitHub Repo: <a href="https://github.com/ourteam/what" target="_blank">github.com/ourteam/what</a><br>
+        LinkedIn: (optional)
+      </p>
+    </div>
+  </div>
+</section>
 
-    <section id="team">
-        <div class="container">
-            <h2>Our Team</h2>
-            <div class="team-member">
-                <img src="team-member1.jpg" alt="Team Member">
-                <h3>Team Member 1</h3>
-                <p>Role: Project Manager</p>
-            </div>
-            <div class="team-member">
-                <img src="team-member2.jpg" alt="Team Member">
-                <h3>Team Member 2</h3>
-                <p>Role: Developer</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="#" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Project Name. All rights reserved.</p>
-    </footer>
 </body>
 </html>

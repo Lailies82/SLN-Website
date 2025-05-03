@@ -2,36 +2,147 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal Website of [Your Name]" />
-  <title>Home | SLN Groups</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SNL Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #fff8f3;
+      color: #333;
+    }
+
+    header {
+      background-color: #fff3e6;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: bold;
+    }
+    .logo {
+  font-size: 50px;
+  font-weight: bold;
+  color: #1c1c1c;
+}
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #1c1c1c;
+      position: relative;
+    }
+
+    nav a.active::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      background: #f58634;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+    }
+
+    .hero {
+      background: url('../image/homebanner.png') center/cover no-repeat;
+      padding: 60px 20px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      height: 400px;
+    }
+
+    .hero h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      max-width: 600px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .btn-orange {
+      background-color: #f58634;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-orange:hover {
+      background-color: #d96e22;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    .team-section h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 30px;
+    }
+
+    .team-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 2px solid #ffdfcc;
+      border-radius: 10px;
+      padding: 20px;
+      width: 280px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: #f58634;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
+
   <header>
+    <div class="logo">SNL</div>
     <nav>
-      <ul class="nav-right">
-        <li ><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="projects.html">Projects</a></li>
-      </ul>
+      <a href="#" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
     </nav>
   </header>
 
-  <main>
-    <section class="center-content">
-      <h1 style="font-size: 48px;">Welcome to Our Website</h1>
-        <img src="image/groupghibli_03.png" alt="Profile Photo" loading="lazy" width="400" height="auto" />
-        <p>This is the homepage of SLN Groups.</p>
-      </section>
-  </main>
+  <div class="hero">
+    <h1>We are three passionate Computer Science students<br>showcasing our journey through tech & creativity.</h1>
+    <button class="btn-orange">Meet Us</button>
+  </div>
 
-  <footer>
-    <p>© 2025 [Nor Laily Binti Zakaria]. Connect: 
-      <a href="https://github.com/yourprofile" target="_blank">GitHub</a> | 
-     
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-    </p>
-  </footer>
+  <section class="team-section">
+    <h2>What We Do — Our Strengths as a Team</h2>
+    <div class="team-cards">
+      <div class="card">
+        <h3>Siti / The Idea Planner</h3>
+        <p>Hi, I'm Siti. I helped brainstorm and organize our ideas. I contributed to writing the main content and planning how our group presents ourselves through the site.</p>
+      </div>
+      <div class="card">
+        <h3>Laily / The Web Builder</h3>
+        <p>Hi! I’m Laily. I’m in charge of implementing our portfolio website using HTML, CSS, and JavaScript. I focus on making sure the structure is correct and responsive across devices.</p>
+      </div>
+      <div class="card">
+        <h3>Lee / The Layout Designer</h3>
+        <p>Hi, I’m Ru Xiu. I designed the layout and visual style of our website. I enjoy working on UI details like font choices, color palettes, and spacing to ensure a clean and friendly user experience.</p>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
