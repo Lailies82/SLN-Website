@@ -1,136 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SNL Projects</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #e3f1ed;
-    }
-    header {
-      background-color: #fff3e6;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: bold;
-    }
-    nav a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #1c1c1c;
-    }
-    nav a.active {
-      border-bottom: 4px solid #f58634;
-    }
-    section {
-      padding: 40px 20px;
-    }
-    h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-    p.intro {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 40px;
-      color: #2c3e50;
-    }
-    .projects-container {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-    .project-card {
-      background-color: #ffffff;
-      border-radius: 10px;
-      padding: 20px;
-      width: 300px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    .project-card h3 {
-      color: #e74c3c;
-    }
-    .screenshot {
-      background-color: #f4a742;
-      height: 120px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: bold;
-      margin: 15px 0;
-    }
-    .project-card ul {
-      padding-left: 20px;
-    }
-    .project-card a {
-      color: #006699;
-      text-decoration: none;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - SNL</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
-  <div class="logo" style="font-size: 24px;">SNL</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="#" class="active">Projects</a>
-  </nav>
-</header>
+  <!-- Header -->
+  <header>
+    <div class="logo">SNL</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#" class="active">Projects</a>
+    </nav>
+  </header>
 
-<section>
-  <h2>Our Projects</h2>
-  <p class="intro">
-    Here are some of the projects we've worked on as part of our learning journey. Each one helped us apply what we've learned about HTML, CSS, and JavaScript while collaborating as a team.
-  </p>
-
-  <div class="projects-container">
-    <!-- Project 1 -->
-    <div class="project-card">
-      <h3>Project 1 /<br>Group Portfolio Website</h3>
-      <div class="screenshot">this website screenshot</div>
+  <!-- Main Content -->
+  <section class="projects-section">
+    <div class="projects-intro">
+      <h2>Our Projects</h2>
       <p>
-        A group portfolio site created using semantic HTML, responsive CSS Grid/Flexbox, and JavaScript. It introduces the team members, showcases skills, and follows good layout and accessibility practices.
-      </p>
-      <p><strong>Technologies:</strong></p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS (Flexbox & Grid)</li>
-        <li>JavaScript (Basic DOM)</li>
-      </ul>
-      <p><strong>Links:</strong><br>
-        GitHub Repo: <a href="https://github.com/ourteam/portfolio" target="_blank">github.com/ourteam/portfolio</a><br>
-        LinkedIn: (optional)
+        Here are some of the projects we've worked on as part of our learning journey. Each one helped us apply what we've learned about HTML, CSS, and JavaScript while collaborating as a team.
       </p>
     </div>
 
-    <!-- Project 2 -->
-    <div class="project-card">
-      <h3>Project 2 /<br>Project name</h3>
-      <div class="screenshot">screenshot</div>
-      <p>
-        What else to put? What else to put? What else to put? (Placeholder text — you can replace this with your second project description.)
-      </p>
-      <p><strong>Technologies:</strong></p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS (Flexbox & Grid)</li>
-        <li>JavaScript (Basic DOM)</li>
-      </ul>
-      <p><strong>Links:</strong><br>
-        GitHub Repo: <a href="https://github.com/ourteam/what" target="_blank">github.com/ourteam/what</a><br>
-        LinkedIn: (optional)
-      </p>
+    <div class="projects-container">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Project 1 /<br>Group Portfolio Website</h3><br>
+        <img src="image/project1.png" alt="Project 1">
+        <p>
+          A group portfolio site created using semantic HTML, responsive CSS Grid/Flexbox, and JavaScript. It introduces the team members, showcases skills, and follows good layout and accessibility practices.
+        </p><br>
+        <p><strong>Technologies:</strong></p><br>
+        <ul>
+          <li>HTML</li>
+          <li>CSS (Flexbox & Grid)</li>
+          <li>JavaScript (Basic DOM)</li>
+        </ul><br>
+        <p><strong>Links:</strong></p><br>
+        <p class="link-block">
+          <a href="https://ryussiyu.github.io/SNL-Project/" target="_blank">SNL Team Website</a><br>
+        </p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3>Project 2 /<br>AI: Self driving Taxi Car</h3><br>
+        <img src="image/project2.png" alt="Project 2">
+        <p>
+          An academic project analysing the ethical and behavioural dimensions of self-driving taxis, presented for the Permikiran Sains dan Teknologi course.
+        </p><br>
+        <p><strong>Technologies:</strong></p><br>
+        <ul>
+          <li>Adobe Photoshop</li>
+          <li>Adobe Illustrator</li>
+          <li>Canvas</li>
+          <li>AI Voice Generator</li>
+        </ul><br>
+        <p><strong>Links:</strong></p><br>
+        <p class="link-block">
+          <a href="https://youtu.be/u9HFJ79QV-c" target="_blank">AI: Self driving Taxi Car</a><br>
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-bar">
+    © 2025 SNL Team Portfolio. All rights reserved.
+  </footer>
 
 </body>
 </html>
